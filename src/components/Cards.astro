@@ -1,0 +1,206 @@
+<div class="container-fluid pt-4 pb-4" id="cards">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-3 text-center">
+                    <div class="imagen-card-1">
+                        <i class="bi bi-scissors" style="font-size: 2rem;"></i>
+                        <h5 class="card-title">Corte de Pelo</h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <h6 class="card-subtitle mb-2">Precio: $25</h6>
+                        <p class="card-text">
+                            Incluye corte de pelo y peinado profesional.
+                        </p>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                Lavado de cabello
+                                <span class="badge bg-primary rounded-pill"
+                                    >Incluido</span
+                                >
+                            </li>
+                            <li class="list-group-item">
+                                Masaje capilar
+                                <span class="badge bg-primary rounded-pill"
+                                    >Incluido</span
+                                >
+                            </li>
+                            <li class="list-group-item">
+                                Tratamiento de la barba
+                                <span class="badge bg-primary rounded-pill"
+                                    >+$10</span
+                                >
+                            </li>
+                        </ul>
+                        <hr />
+                        <button class="btn btn-primary">
+                            <i class="bi bi-cart-fill me-2"></i>Agendar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-3 text-center">
+                    <div class="imagen-card-2">
+                        <i class="bi bi-eyeglasses" style="font-size: 2rem;"
+                        ></i>
+                        <h5 class="card-title">Corte de Barba</h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <h6 class="card-subtitle mb-2">Precio: $15</h6>
+                        <p class="card-text">
+                            Incluye recorte y perfilado de la barba.
+                        </p>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                Afeitado al ras
+                                <span class="badge bg-primary rounded-pill"
+                                    >Incluido</span
+                                >
+                            </li>
+                            <li class="list-group-item">
+                                Afeitado premium
+                                <span class="badge bg-primary rounded-pill"
+                                    >Incluido</span
+                                >
+                            </li>
+                            <li class="list-group-item">
+                                Tratamiento facial
+                                <span class="badge bg-primary rounded-pill"
+                                    >+$5</span
+                                >
+                            </li>
+                        </ul>
+                        <hr />
+                        <button class="btn btn-primary">
+                            <i class="bi bi-cart-fill me-2"></i>Agendar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-3 text-center">
+                    <div class="imagen-card-3">
+                        <i class="bi bi-award" style="font-size: 2rem;"></i>
+                        <h5 class="card-title">Corte y Barba</h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <h6 class="card-subtitle mb-2">Precio: $35</h6>
+                        <p class="card-text">
+                            Corte de pelo y un corte de barba.
+                        </p>
+                        <ul class="list-group">
+                            <li
+                                class="list-group-item d-flex justify-content-between align-items-center"
+                            >
+                                Servicio completo
+                                <span class="badge bg-primary rounded-pill"
+                                    >Incluido</span
+                                >
+                            </li>
+                            <li
+                                class="list-group-item d-flex justify-content-between align-items-center"
+                            >
+                                Tratamiento de lujo
+                                <span class="badge bg-primary rounded-pill"
+                                    >+$15</span
+                                >
+                            </li>
+                            <li
+                                class="list-group-item d-flex justify-content-between align-items-center"
+                            >
+                                Corte de pelo personalizado
+                                <span class="badge bg-primary rounded-pill"
+                                    >+$10</span
+                                >
+                            </li>
+                        </ul>
+                        <hr />
+                        <button class="btn btn-primary">
+                            <i class="bi bi-cart-fill me-2"></i>Agendar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        #cards {
+            min-height: 100vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            overflow: hidden;
+            border-radius: 0px;
+            background-color: var(--negro);
+            color: var(--blanco);
+        }
+
+        .card-subtitle {
+            font-weight: bolder;
+        }
+
+        .list-group {
+            background-color: transparent;
+            border: none;
+            border-radius: 0px;
+        }
+
+        .list-group-item {
+            background-color: transparent;
+            border: none;
+            color: var(--blanco);
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .bg-primary {
+            background-color: var(--tan) !important;
+        }
+
+        .imagen-card-1 {
+            background-image: url(/public/imgs/Cards/1.png);
+            background-size: cover;
+            background-position: center;
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: var(--blanco);
+        }
+
+        .imagen-card-2 {
+            background-image: url(/public/imgs/Cards/2.png);
+            background-size: cover;
+            background-position: center;
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: var(--blanco);
+        }
+
+        .imagen-card-3 {
+            background-image: url(/public/imgs/Cards/3.png);
+            background-size: cover;
+            background-position: center;
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: var(--blanco);
+        }
+    </style>
+</div>

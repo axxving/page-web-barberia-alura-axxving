@@ -2,11 +2,13 @@
 
 :root {
   --blanco: #fff;
-  --gris: #ebebeb;
-  --negro: #000;
-  --amarillo: #ffbc04;
-  --cafe: #a14618;
-  --cafe-oscuro: #4b1900;
+  --gris: #222627;
+  --negro: #353E40;
+  --tan: #D59E68;
+  --vino: #731A2B;
+  --tirquesa: #5FD9D9;
+  --peach: #D99873;
+  --rouse: #A6695B;
 }
 
 * {
@@ -18,7 +20,7 @@ body {
 }
 
 .btn-primary {
-  background-color: var(--cafe) !important;
+  background-color: var(--vino) !important;
   border: none !important;
   color: var(--blanco) !important;
   &:hover {
@@ -28,5 +30,5 @@ body {
 }
 
 .btn{
-  border-radius: 30px !important;
+  border-radius: 0px !important;
 }
