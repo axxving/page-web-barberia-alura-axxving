@@ -4,7 +4,7 @@
     <div class="container">
       <!-- Logo -->
       <a class="navbar-brand" href="#">
-        <img src="/imgs/Logos/2.png" alt="MarketUP Logo" width="100" />
+        <h3 class="nombre-pagina">Barberia Alura</h3>
       </a>
 
       <!-- Menú hamburguesa -->
@@ -30,7 +30,9 @@
             <a class="nav-link" href="#acerca">Productos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contacto">Contacto</a>
+            <a class="nav-link btn btn-outline-light" href="#contacto"
+              ><i class="bi bi-person-lines-fill"></i> Contacto</a
+            >
           </li>
         </ul>
       </div>
@@ -39,6 +41,8 @@
 </header>
 
 <style>
+  @import url("https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap");
+
   #header {
     position: fixed;
     top: 0;
@@ -46,6 +50,11 @@
     background-color: transparent;
 
     z-index: 1000;
+  }
+
+  .nombre-pagina {
+    font-family: "Sansita", sans-serif !important;
+    color: var(--blanco);
   }
 
   .nav-link {
@@ -94,4 +103,40 @@
     outline: none;
     border: none;
   }
+
+  .bg-black {
+    color: #4b1900 !important;
+  }
+
+  .btn-outline-light {
+    background-color: var(--blanco);
+    border-radius: 5px;
+    color: var(--negro) !important;
+    &:hover {
+      background-color: var(--cafe) !important;
+      color: var(--blanco) !important;
+    }
+  }
+
+  .bi {
+    margin-right: 5px;
+  }
 </style>
+
+<script>
+  import $ from "jquery";
+
+  var header = $("#header");
+
+  // Al hacer scroll
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+
+    // Si el scroll es mayor a 100px, añadir la clase con fondo negro
+    if (scroll > 100) {
+      header.addClass("bg-black");
+    } else {
+      header.removeClass("bg-black");
+    }
+  });
+</script>

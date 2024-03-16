@@ -1,16 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&family=Rubik+Dirt&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
 
 :root {
   --blanco: #fff;
   --gris: #ebebeb;
   --negro: #000;
   --amarillo: #ffbc04;
+  --cafe: #a14618;
+  --cafe-oscuro: #4b1900;
 }
 
 * {
-  font-family: "Roboto Slab", serif !important;
+  font-family: "Manjari", sans-serif;
 }
 
 body {
   background-color: var(--gris) !important;
+}
+
+.btn-primary {
+  background-color: var(--cafe) !important;
+  border: none !important;
+
+  &:hover {
+    background-color: var(--cafe-oscuro) !important;
+  }
 }

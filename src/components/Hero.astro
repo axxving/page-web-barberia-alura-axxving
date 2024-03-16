@@ -1,21 +1,26 @@
-<div class="container-fluid pt-3 pb-3" id="hero">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 text-center">
-        <h2>Bienvenido a Barbería Alura</h2>
-        <a href="#" class="btn btn-outline-light">Explora nuestros servicios</a>
-      </div>
+<div class="container-fluid vh-100 d-flex flex-column" id="hero">
+  <div class="row flex-grow-1 justify-content-center align-items-center">
+    <div class="col-12 text-center">
+      <h2 class="titulo-hero display-5">Bienvenido a Barbería Alura</h2>
+      <p>
+        En la barbería, la destreza del barbero es tan afilada como sus
+        herramientas, creando más que un corte de pelo, una experiencia de
+        confianza y estilo.
+      </p>
+      <a href="#" class="btn btn-primary">Explora nuestros servicios</a>
     </div>
-    <div class="row justify-content-center">
-      <div class="col-12 text-center">
-        <i class="bi bi-arrow-down-circle" style="font-size: 2rem;"></i>
-        <p class="small">Desplácese hacia abajo para más información</p>
-      </div>
+  </div>
+  <div class="row flex-grow-0 justify-content-center align-items-end">
+    <div class="col-12 text-center mb-3">
+      <p class="small">Desplácese hacia abajo para más información</p>
+      <div class="bi bi-arrow-down-circle fs-2"></div>
     </div>
   </div>
 </div>
 
 <style>
+  @import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap");
+
   #hero {
     min-height: 100vh;
     background-image: url(/public/imgs/banner.png);
@@ -28,28 +33,27 @@
     flex-direction: column;
   }
 
+  .titulo-hero {
+    font-family: "Rubik Dirt", system-ui !important;
+  }
+
   * {
     color: aliceblue;
   }
 
-  .bg-black {
-    color: #000;
+  .bi-arrow-down-circle {
+    animation: bounce 2s infinite;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
 </style>
-<script>
-  import $ from "jquery";
-
-  var header = $("#header");
-
-  // Al hacer scroll
-  $(window).scroll(function () {
-    var scroll = $(window).scrollTop();
-
-    // Si el scroll es mayor a 100px, añadir la clase con fondo negro
-    if (scroll > 100) {
-      header.addClass("bg-black");
-    } else {
-      header.removeClass("bg-black");
-    }
-  });
-</script>
