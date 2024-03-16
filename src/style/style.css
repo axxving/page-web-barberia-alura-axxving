@@ -20,8 +20,13 @@ body {
 .btn-primary {
   background-color: var(--cafe) !important;
   border: none !important;
-
+  color: var(--blanco) !important;
   &:hover {
-    background-color: var(--cafe-oscuro) !important;
+    background-color: var(--blanco) !important;
+    color: var(--negro) !important;
   }
+}
+
+.btn{
+  border-radius: 30px !important;
 }
