@@ -1,0 +1,55 @@
+<div class="container-fluid pt-3 pb-3" id="hero">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center">
+        <h2>Bienvenido a Barbería Alura</h2>
+        <a href="#" class="btn btn-outline-light">Explora nuestros servicios</a>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 text-center">
+        <i class="bi bi-arrow-down-circle" style="font-size: 2rem;"></i>
+        <p class="small">Desplácese hacia abajo para más información</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  #hero {
+    min-height: 100vh;
+    background-image: url(/public/imgs/banner.png);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  * {
+    color: aliceblue;
+  }
+
+  .bg-black {
+    color: #000;
+  }
+</style>
+<script>
+  import $ from "jquery";
+
+  var header = $("#header");
+
+  // Al hacer scroll
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+
+    // Si el scroll es mayor a 100px, añadir la clase con fondo negro
+    if (scroll > 100) {
+      header.addClass("bg-black");
+    } else {
+      header.removeClass("bg-black");
+    }
+  });
+</script>
