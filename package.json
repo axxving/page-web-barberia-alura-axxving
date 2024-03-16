@@ -10,6 +10,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.5.5"
+    "astro": "^4.5.5",
+    "astro-bootstrap": "^0.6.2",
+    "bootstrap": "^5.3.3"
   }
 }
