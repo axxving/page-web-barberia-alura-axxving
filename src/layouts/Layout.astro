@@ -1,6 +1,6 @@
 ---
 import "../style/style.css";
-
+import Spinner from "../components/Spinner.astro";
 interface Props {
   title: string;
 }
@@ -8,7 +8,7 @@ interface Props {
 const { title } = Astro.props;
 ---
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Caracteres -->
@@ -69,6 +69,7 @@ const { title } = Astro.props;
   </head>
 
   <body>
+    <Spinner />
     <slot />
   </body>
 </html>
