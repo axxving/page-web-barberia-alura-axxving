@@ -1,53 +1,231 @@
 <div class="container-fluid pt-4 pb-4" id="contacto">
-    <div class="container">
+    <div class="container mt-5 pt-3">
         <div class="row">
-            <div class="col-md-12 text-center">
-                <h2 class="titulo-contacto display-3">Contáctanos</h2>
-                <p class="text-white">
-                    ¡Estamos aquí para ayudarte! <br /> Déjanos tus comentarios o
-                    preguntas y te responderemos lo antes posible.
-                </p>
-            </div>
-        </div>
-        <div class="row justify-content-center">
             <div class="col-md-6">
-                <form>
-                    <div class="row mb-3">
-                        <div class="col">
-                            <input
-                                type="text"
-                                class="form-control"
-                                placeholder="Nombre"
-                                aria-label="Nombre"
-                            />
-                        </div>
-                        <div class="col">
-                            <input
-                                type="text"
-                                class="form-control"
-                                placeholder="Apellido"
-                                aria-label="Apellido"
-                            />
-                        </div>
+                <div class="row text-white">
+                    <div class="col">
+                        <h2 class="titulo-contacto text-center display-3">
+                            Contáctanos
+                        </h2>
+                        <p class="text-center">
+                            ¡Estamos aquí para ayudarte! <br /> Déjanos tus comentarios
+                            o preguntas y te responderemos lo antes posible.
+                        </p>
                     </div>
-                    <div class="mb-3">
-                        <input
-                            type="email"
-                            class="form-control"
-                            placeholder="Correo Electrónico"
-                            aria-label="Correo Electrónico"
-                        />
+                </div>
+                <div class="row text-white justify-content-center">
+                    <div class="col-md-10">
+                        <form>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Nombre"
+                                        aria-label="Nombre"
+                                    />
+                                </div>
+                                <div class="col">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Apellido"
+                                        aria-label="Apellido"
+                                    />
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    placeholder="Correo Electrónico"
+                                    aria-label="Correo Electrónico"
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <textarea
+                                    class="form-control"
+                                    rows="3"
+                                    placeholder="Mensaje"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <p>¿Cómo le gustaría que lo contactemos?</p>
+                                <div class="form-check">
+                                    <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value="Email"
+                                        id="chkEmail"
+                                    />
+                                    <label
+                                        class="form-check-label"
+                                        for="chkEmail"
+                                    >
+                                        Email
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value="Teléfono"
+                                        id="chkTelefono"
+                                    />
+                                    <label
+                                        class="form-check-label"
+                                        for="chkTelefono"
+                                    >
+                                        Teléfono
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value="WhatsApp"
+                                        id="chkWhatsApp"
+                                    />
+                                    <label
+                                        class="form-check-label"
+                                        for="chkWhatsApp"
+                                    >
+                                        WhatsApp
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <p>¿En cuál horario prefiere ser atendido?</p>
+                                <select class="form-select">
+                                    <option selected>Seleccionar</option>
+                                    <option value="Mañana">Mañana</option>
+                                    <option value="Tarde">Tarde</option>
+                                    <option value="Noche">Noche</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <p>
+                                    ¿Le gustaría recibir novedades de la
+                                    Barbería Alura?
+                                </p>
+                                <div class="form-check">
+                                    <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="chkNovedades"
+                                    />
+                                    <label
+                                        class="form-check-label"
+                                        for="chkNovedades"
+                                    >
+                                        Sí, me gustaría recibir novedades.
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary send">
+                                <i class="bi bi-send"></i> Enviar</button
+                            >
+                        </form>
                     </div>
-                    <div class="mb-3">
-                        <textarea
-                            class="form-control"
-                            rows="3"
-                            placeholder="Mensaje"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary send">
-                        <i class="bi bi-send"></i> Enviar</button
-                    >
-                </form>
+                </div>
+            </div>
+
+            <div class="col-md-6 mt-4">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Día</th>
+                                <th>Horario de atención</th>
+                                <th>Servicios Disponibles</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><i class="bi bi-calendar"></i> Lunes</td>
+                                <td
+                                    ><i class="bi bi-clock"></i> 9:00 AM - 6:00 PM</td
+                                >
+                                <td>
+                                    <i class="bi bi-scissors"></i> Cortes de pelo<br
+                                    />
+                                    <i class="bi bi-razor"></i> Afeitados<br />
+                                    <i class="bi bi-person"></i> Tratamientos faciales
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="bi bi-calendar"></i> Martes</td>
+                                <td
+                                    ><i class="bi bi-clock"></i> 9:00 AM - 6:00 PM</td
+                                >
+                                <td>
+                                    <i class="bi bi-scissors"></i> Cortes de pelo<br
+                                    />
+                                    <i class="bi bi-razor"></i> Afeitados<br />
+                                    <i class="bi bi-person"></i> Tratamientos faciales
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="bi bi-calendar"></i> Miércoles</td
+                                >
+                                <td
+                                    ><i class="bi bi-clock"></i> 9:00 AM - 6:00 PM</td
+                                >
+                                <td>
+                                    <i class="bi bi-scissors"></i> Cortes de pelo<br
+                                    />
+                                    <i class="bi bi-razor"></i> Afeitados<br />
+                                    <i class="bi bi-person"></i> Tratamientos faciales
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="bi bi-calendar"></i> Jueves</td>
+                                <td
+                                    ><i class="bi bi-clock"></i> 9:00 AM - 6:00 PM</td
+                                >
+                                <td>
+                                    <i class="bi bi-scissors"></i> Cortes de pelo<br
+                                    />
+                                    <i class="bi bi-razor"></i> Afeitados<br />
+                                    <i class="bi bi-person"></i> Tratamientos faciales
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="bi bi-calendar"></i> Viernes</td>
+                                <td
+                                    ><i class="bi bi-clock"></i> 9:00 AM - 6:00 PM</td
+                                >
+                                <td>
+                                    <i class="bi bi-scissors"></i> Cortes de pelo<br
+                                    />
+                                    <i class="bi bi-razor"></i> Afeitados<br />
+                                    <i class="bi bi-person"></i> Tratamientos faciales
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="bi bi-calendar"></i> Sábado</td>
+                                <td
+                                    ><i class="bi bi-clock"></i> 10:00 AM - 4:00
+                                    PM</td
+                                >
+                                <td>
+                                    <i class="bi bi-scissors"></i> Cortes de pelo<br
+                                    />
+                                    <i class="bi bi-razor"></i> Afeitados<br />
+                                    <i class="bi bi-person"></i> Tratamientos faciales<br
+                                    />
+                                    <i class="bi bi-people"></i> Barbería para niños
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="bi bi-calendar"></i> Domingo</td>
+                                <td><i class="bi bi-calendar-x"></i> Cerrado</td
+                                >
+                                <td>N/A</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
@@ -74,12 +252,34 @@
     }
 
     input,
-    textarea {
-        background-color: #ffffff00;
-        backdrop-filter: blur(10px);
-        border: 2px solid var(--blanco);
-        border-radius: 0px;
+    textarea,
+    select,
+    option {
+        background-color: #ffffff00 !important;
+        backdrop-filter: blur(10px) !important;
+        border: 1px solid var(--blanco) !important;
         color: var(--blanco) !important;
+        border-radius: 20px !important;
+    }
+
+    .form-select {
+        background-color: rgba(
+            255,
+            255,
+            255,
+            0.5
+        ); /* Color de fondo transparente */
+        border: none;
+    }
+
+    /* Estilo para los elementos option */
+    .form-select option {
+        background-color: rgba(
+            255,
+            255,
+            255,
+            0.5
+        ); /* Color de fondo transparente */
     }
 
     input::placeholder {
