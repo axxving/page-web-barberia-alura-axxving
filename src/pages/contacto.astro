@@ -1,12 +1,16 @@
 ---
 import Layout from "../layouts/Layout.astro";
 
+// Scripts
+import Scripts from "../components/Scripts.astro";
+
 // Componentes
-import Contact from "../components/Contacto.astro";
 import Header from "../components/Header.astro";
+import Contact from "../components/Contacto.astro";
 ---
 
 <Layout title="Contacto">
+    <Scripts />
     <Header />
     <Contact />
 </Layout>
