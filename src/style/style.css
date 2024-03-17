@@ -7,12 +7,22 @@
   --amarillo: #c78c19;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   font-family: "Rhodium Libre", serif;
+
   &::selection {
-    background-color: var(--amarillo); /* Cambia el color de fondo de la selección */
-    color: var(--blanco); /* Cambia el color del texto seleccionado */
+    background-color: var(--amarillo);
+    /* Cambia el color de fondo de la selección */
+    color: var(--blanco);
+    /* Cambia el color del texto seleccionado */
   }
+
+  scroll-behavior: smooth;
+
 }
 
 body {
@@ -33,4 +43,3 @@ body {
 .btn {
   border-radius: 30px !important;
 }
-

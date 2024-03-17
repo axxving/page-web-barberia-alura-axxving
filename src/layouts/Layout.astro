@@ -1,6 +1,7 @@
 ---
 import "../style/style.css";
 import Spinner from "../components/Spinner.astro";
+import BtnUp from "../components/BtnUp.astro";
 
 interface Props {
   title: string;
@@ -34,7 +35,11 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Icono de la página -->
-    <link rel="shortcut icon" href="/public/imgs/Logos/logo-blanco.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="/public/imgs/Logos/logo-blanco.png"
+      type="image/x-icon"
+    />
 
     <!-- Importando bootstrap 5 -->
     <link
@@ -71,6 +76,7 @@ const { title } = Astro.props;
 
   <body>
     <Spinner />
+    <BtnUp />
     <slot />
   </body>
 </html>
