@@ -7,7 +7,7 @@
         <img
           src="/imgs/Logos/logo-blanco.png"
           alt="Barberia Alura Logo"
-          width="50"
+          width="30"
           class="logo-header"
         />
       </a>
@@ -35,7 +35,9 @@
             <a class="nav-link" href="/productos">Servicios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-outline-light" href="/contacto"
+            <a
+              class="nav-link btn-contacto btn btn-outline-light"
+              href="/contacto"
               ><i class="bi bi-person-lines-fill"></i> Contacto</a
             >
           </li>
@@ -49,12 +51,15 @@
   @import url("https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap");
 
   #header {
+    background-color: transparent;
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: transparent;
 
-    z-index: 1000000000;
+    z-index: 10;
+    transition: background-color 0s ease, transform 1s ease;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
   }
 
   .nombre-pagina {
@@ -123,21 +128,6 @@
     margin-right: 5px;
   }
 
-  .mi-clase-color {
-    background-color: blue; /* Cambia 'blue' al color deseado */
-  }
-</style>
-
-<style>
-  #header {
-    background-color: transparent;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-    transition: background-color 0s ease, transform 1s ease;
-  }
-
   #header.scrolled {
     background-color: var(
       --negro
@@ -178,12 +168,21 @@
     background-color: transparent;
   }
 
+  .btn-contacto {
+    margin-left: 10px;
+  }
+
   /*TODO Media Querys*/
   /*? Para pantallas extra pequeñas y pequeñas */
   @media (max-width: 575.98px) {
     .navbar-collapse {
       background-color: var(--negro);
       padding: 0px 10px 10px 10px;
+    }
+
+    .btn-contacto {
+      margin-left: 0px;
+      margin-top: 10px;
     }
   }
 
@@ -193,6 +192,11 @@
       background-color: var(--negro);
       padding: 0px 10px 10px 10px;
     }
+
+    .btn-contacto {
+      margin-left: 0px;
+      margin-top: 10px;
+    }
   }
 
   /*? Para pantallas grandes */
@@ -200,6 +204,11 @@
     .navbar-collapse {
       background-color: var(--negro);
       padding: 0px 10px 10px 10px;
+    }
+
+    .btn-contacto {
+      margin-left: 0px;
+      margin-top: 10px;
     }
   }
 </style>
