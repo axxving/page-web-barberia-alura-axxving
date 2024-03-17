@@ -1,0 +1,108 @@
+<div class="container-fluid pt-4 pb-4" id="contacto">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 class="titulo-contacto">Contáctanos</h2>
+                <p>
+                    ¡Estamos aquí para ayudarte! <br /> Déjanos tus comentarios o
+                    preguntas y te responderemos lo antes posible.
+                </p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Nombre"
+                                aria-label="Nombre"
+                            />
+                        </div>
+                        <div class="col">
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Apellido"
+                                aria-label="Apellido"
+                            />
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Correo Electrónico"
+                            aria-label="Correo Electrónico"
+                        />
+                    </div>
+                    <div class="mb-3">
+                        <textarea
+                            class="form-control"
+                            rows="3"
+                            placeholder="Mensaje"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary send">
+                        <i class="bi bi-send"></i> Enviar</button
+                    >
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap");
+
+    #contacto {
+        min-height: 100vh;
+        background-image: url(/public/imgs/banner-contacto.png);
+        background-size: cover;
+        background-position: center;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titulo-contacto {
+        font-family: "Rubik Dirt", system-ui !important;
+    }
+
+    input,
+    textarea {
+        background-color: #ffffff00;
+        backdrop-filter: blur(10px);
+        border: 2px solid var(--blanco);
+        border-radius: 0px;
+    }
+
+    input::placeholder {
+        color: var(--blanco);
+    }
+
+    input:focus {
+        background-color: #ffffff00;
+    }
+
+    textarea:focus {
+        background-color: #ffffff00;
+    }
+
+    .form-control:focus {
+        border-color: rgb(255, 255, 255);
+        /* Cambia el color del contorno al hacer clic */
+        box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.466);
+        /* Cambia la sombra al hacer clic */
+    }
+
+    textarea::placeholder {
+        color: var(--blanco);
+    }
+
+    .send {
+        width: 100%;
+    }
+</style>

@@ -13,6 +13,7 @@
 
 * {
   font-family: "Manjari", sans-serif;
+  color: var(--blanco) !important;
 }
 
 body {
