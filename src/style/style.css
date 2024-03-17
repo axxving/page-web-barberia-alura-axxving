@@ -1,19 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&family=Rubik+Dirt&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap');
 
 :root {
-  --blanco: #fff;
-  --gris: #222627;
-  --negro: #353E40;
-  --tan: #D59E68;
-  --vino: #731A2B;
-  --tirquesa: #5FD9D9;
-  --peach: #D99873;
-  --rouse: #A6695B;
+  --blanco: #ebebeb;
+  --gris: #BBBBBB;
+  --negro: #141615;
+  --amarillo: #c78c19;
 }
 
 * {
-  font-family: "Manjari", sans-serif;
-  color: var(--blanco) !important;
+  font-family: "Rhodium Libre", serif;
+  &::selection {
+    background-color: var(--amarillo); /* Cambia el color de fondo de la selección */
+    color: var(--blanco); /* Cambia el color del texto seleccionado */
+  }
 }
 
 body {
@@ -21,15 +20,17 @@ body {
 }
 
 .btn-primary {
-  background-color: var(--vino) !important;
+  background-color: var(--amarillo) !important;
   border: none !important;
   color: var(--blanco) !important;
+
   &:hover {
     background-color: var(--blanco) !important;
     color: var(--negro) !important;
   }
 }
 
-.btn{
-  border-radius: 0px !important;
+.btn {
+  border-radius: 30px !important;
 }
+

@@ -1,23 +1,69 @@
 <div class="container-fluid vh-100 d-flex flex-column" id="hero">
   <div class="row flex-grow-1 justify-content-center align-items-center">
     <div class="col-12 text-center">
-      <h2 class="titulo-hero display-5">Bienvenido a Barbería Alura</h2>
+      <h2 class="titulo-hero display-3">Bienvenido a Barbería Alura</h2>
       <p>
         En la barbería, la destreza del barbero es tan afilada como sus
-        herramientas,<br> creando más que un corte de pelo, una experiencia de
+        herramientas,<br /> creando más que un corte de pelo, una experiencia de
         confianza y estilo.
       </p>
       <a href="#" class="btn btn-primary">Explora nuestros servicios</a>
     </div>
   </div>
+  <div class="row flex-grow-0 justify-content-center align-items-end">
+    <div class="col-12 text-center mb-3">
+      <p class="small">Desplácese hacia abajo para más información</p>
+      <div class="bi bi-arrow-down-circle fs-2"></div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid pt-4 pb-4" id="sobre">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6  pt-3 pb-3">
+        <img
+          src="/imgs/barberia-poste.png"
+          alt="Barbería Alura"
+          class="img-fluid"
+        />
+      </div>
+      <div class="col-md-6">
+        <h2 class="display-3 titulo">Barbería Alura</h2>
+        <p class="parrafo">
+          <strong
+            >Ubicada en el corazón de la ciudad, la Barbería Alura trae para el
+            mercado lo que hay de mejor para su cabello y barba.</strong
+          > Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista
+          nuevos clientes diariamente.
+        </p>
+        <p class="parrafo">
+          <em
+            >Nuestra misión es: "Proporcionar autoestima y calidad de vida a
+            nuestros clientes".</em
+          >
+        </p>
+        <p class="parrafo">
+          <em
+            >Ofrecemos profesionales experimentados que están constantemente
+            observando los cambios y movimiento en el mundo de la moda, para así
+            ofrecer a nuestros clientes las últimas tendencias.</em
+          > El atendimiento posee un padrón de <u>excelencia y agilidad</u>,
+          garantizando calidad y satisfacción de nuestros clientes.
+        </p>
+
+        <a href="" class="btn btn-primary">¡Ver servicios!</a>
+      </div>
+    </div>
+  </div>
 </div>
 
 <style>
-  @import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
 
   #hero {
     min-height: 100vh;
-    background-image: url(/public/imgs/banner.png);
+    background-image: url(/public/imgs/fondos/1.png);
     background-size: cover;
     background-position: center;
 
@@ -28,11 +74,12 @@
   }
 
   .titulo-hero {
-    font-family: "Rubik Dirt", system-ui !important;
+    font-family: "Playfair Display SC", serif;
   }
 
   * {
     color: aliceblue;
+    
   }
 
   .bi-arrow-down-circle {
@@ -49,5 +96,28 @@
     100% {
       transform: translateY(0);
     }
+  }
+
+  #sobre {
+    min-height: 100vh;
+    background-color: var(--blanco);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .parrafo,
+  strong,
+  em,
+  u {
+    color: var(--negro);
+  }
+
+  .titulo {
+    font-weight: bold;
+    color: var(--negro);
+    font-family: "Playfair Display SC", serif;
+    margin-bottom: 15px;
   }
 </style>
