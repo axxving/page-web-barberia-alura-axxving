@@ -11,6 +11,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.titulo{
+  font-family: "Playfair Display SC", serif;
+}
+
 * {
   font-family: "Rhodium Libre", serif;
 
