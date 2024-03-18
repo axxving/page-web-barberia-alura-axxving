@@ -126,91 +126,116 @@
             </div>
         </div>
     </div>
-
-    <style>
-        #cards {
-            min-height: 100vh;
-            background-image: url(/public/imgs/bg.jpg);
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .card {
-            overflow: hidden;
-            border-radius: 0px;
-            background-color: var(--negro);
-            color: var(--blanco);
-        }
-
-        .card-subtitle {
-            font-weight: bolder;
-        }
-
-        .list-group {
-            background-color: transparent;
-            border: none;
-            border-radius: 0px;
-        }
-
-        .list-group-item {
-            background-color: transparent;
-            border: none;
-            color: var(--blanco);
-
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .bg-primary {
-            background-color: var(--amarillo) !important;
-        }
-
-        .imagen-card-1 {
-            background-image: url(/public/imgs/Cards/1.png);
-            background-size: cover;
-            background-position: center;
-            min-height: 200px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            color: var(--blanco);
-        }
-
-        .imagen-card-2 {
-            background-image: url(/public/imgs/Cards/2.png);
-            background-size: cover;
-            background-position: center;
-            min-height: 200px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            color: var(--blanco);
-        }
-
-        .imagen-card-3 {
-            background-image: url(/public/imgs/Cards/3.png);
-            background-size: cover;
-            background-position: center;
-            min-height: 200px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            color: var(--blanco);
-        }
-
-        .card {
-            transition: all ease-in-out 200ms !important;
-            /*filter: grayscale(40%) !important;*/
-            &:hover {
-                transform: translateY(-8px) !important;
-                /*filter: grayscale(0%) !important;*/
-            }
-        }
-    </style>
 </div>
+
+<div class="container-fluid pt-4 pb-4" id="video">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <iframe
+                width="100%"
+                height="400"
+                src="https://www.youtube.com/embed/wcVVXUV0YUY?start=20"
+                frameborder="0"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<style>
+    #cards {
+        min-height: 100vh;
+        background-image: url(/public/imgs/bg.jpg);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        overflow: hidden;
+        border-radius: 0px;
+        background-color: var(--negro);
+        color: var(--blanco);
+    }
+
+    .card-subtitle {
+        font-weight: bolder;
+    }
+
+    .list-group {
+        background-color: transparent;
+        border: none;
+        border-radius: 0px;
+    }
+
+    .list-group-item {
+        background-color: transparent;
+        border: none;
+        color: var(--blanco);
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .bg-primary {
+        background-color: var(--amarillo) !important;
+    }
+
+    .imagen-card-1 {
+        background-image: url(/public/imgs/Cards/1.png);
+        background-size: cover;
+        background-position: center;
+        min-height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: var(--blanco);
+    }
+
+    .imagen-card-2 {
+        background-image: url(/public/imgs/Cards/2.png);
+        background-size: cover;
+        background-position: center;
+        min-height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: var(--blanco);
+    }
+
+    .imagen-card-3 {
+        background-image: url(/public/imgs/Cards/3.png);
+        background-size: cover;
+        background-position: center;
+        min-height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: var(--blanco);
+    }
+
+    .card {
+        transition: all ease-in-out 200ms !important;
+        /*filter: grayscale(40%) !important;*/
+        &:hover {
+            transform: translateY(-8px) !important;
+            /*filter: grayscale(0%) !important;*/
+        }
+    }
+
+    #video {
+        background-image: url(/public/imgs/bg.jpg);
+        transition: all ease-in-out 200ms !important;
+    }
+
+    /* Efecto de sombra al pasar el ratón por encima */
+    #video:hover iframe {
+        transition: all ease-in-out 200ms !important;
+        box-shadow: 0 0 100px rgba(145, 119, 3, 0.445); /* Cambia los valores según tu preferencia */
+        opacity: 0.5;
+    }
+</style>
