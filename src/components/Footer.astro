@@ -3,33 +3,49 @@
         <div class="row text-white">
             <div class="col-md-4 mb-3 mt-3">
                 <h5 class="mb-3">Información de contacto</h5>
-                <p>Dirección: [Dirección de la barbería]</p>
-                <p>Teléfono: [Número de teléfono]</p>
-                <p>Email: [Correo electrónico]</p>
+                <p>
+                    <i class="bi bi-geo-alt-fill"></i> Dirección: Calle de la Elegancia,
+                    123, Ciudad Elegante, Estado del Estilo
+                </p>
+                <p>
+                    <i class="bi bi-phone-fill"></i> Teléfono: +1 (555) 123-4567
+                </p>
+                <p>
+                    <i class="bi bi-envelope-fill"></i> Email: info@barberiaalura.com
+                </p>
             </div>
+
             <div class="col-md-4 mb-3 mt-3">
                 <h5 class="mb-3">Enlaces rápidos</h5>
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Galería</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li class="mb-3"><a href="/">Inicio</a></li>
+                    <li class="mb-3"><a href="/productos">Servicios</a></li>
+                    <li class="mb-3"><a href="/contacto">Contacto</a></li>
                 </ul>
             </div>
             <div class="col-md-4 mb-3 mt-3">
                 <h5 class="mb-3">Síguenos en redes sociales</h5>
                 <ul class="list-inline">
-                    <li class="list-inline-item">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
+                    <li class="list-inline-item m-3">
+                        <a
+                            target="_blank"
+                            href="https://www.facebook.com/aluracursoslatam/?locale=es_LA"
+                            ><i class="bi bi-facebook display-5"></i></a
+                        >
                     </li>
-                    <li class="list-inline-item">
-                        <a href="#"><i class="bi bi-twitter"></i></a>
+                    <li class="list-inline-item m-3">
+                        <a
+                            target="_blank"
+                            href="https://www.instagram.com/aluralatam/?hl=es"
+                            ><i class="bi bi-instagram display-5"></i></a
+                        >
                     </li>
-                    <li class="list-inline-item">
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <li class="list-inline-item m-3">
+                        <a
+                            target="_blank"
+                            href="https://www.linkedin.com/company/alura-latam/?originalSubdomain=mx"
+                            ><i class="bi bi-linkedin display-5"></i></a
+                        >
                     </li>
                 </ul>
             </div>
@@ -62,5 +78,24 @@
 
     #footfooter {
         background-color: var(--negro);
+    }
+
+    a {
+        text-decoration: none;
+        transition: all ease-in-out 200ms;
+    }
+
+    a:hover {
+        color: var(--amarillo);
+        transform: scale(1.1) !important;
+    }
+
+    .bi {
+        transition: all ease-in-out 200ms;
+    }
+
+    a:hover .bi {
+        color: var(--amarillo);
+        transform: scale(1.1) !important;
     }
 </style>

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap');
 
 :root {
-  --blanco: #ebebeb;
+  --blanco: #dddddd;
   --gris: #BBBBBB;
   --negro: #141615;
   --amarillo: #c78c19;
@@ -25,6 +25,10 @@ html {
 
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: var(--blanco) !important;
+}
+
 body {
   background-color: var(--gris) !important;
 }
@@ -42,4 +46,8 @@ body {
 
 .btn {
   border-radius: 30px !important;
+}
+
+.text-white{
+  color: var(--blanco);
 }
