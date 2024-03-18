@@ -1,137 +1,211 @@
 <div class="container-fluid pt-4 pb-4" id="contacto">
     <div class="container mt-5 pt-3">
         <div class="row">
-            <div class="col-md-12">
-                <div class="row text-white">
-                    <div class="col">
-                        <h2 class="titulo-contacto text-center display-3">
-                            Contáctanos
-                        </h2>
-                        <p class="text-center">
-                            ¡Estamos aquí para ayudarte! <br /> Déjanos tus comentarios
-                            o preguntas y te responderemos lo antes posible.
-                        </p>
+            <div class="col-lg-6">
+                <h2 class="titulo-contacto text-center display-3">
+                    Contáctanos
+                </h2>
+                <p class="text-center">
+                    ¡Estamos aquí para ayudarte! <br /> Déjanos tus comentarios o
+                    preguntas y te responderemos lo antes posible.
+                </p>
+                <form>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Nombre"
+                                aria-label="Nombre"
+                            />
+                        </div>
+                        <div class="col">
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Apellido"
+                                aria-label="Apellido"
+                            />
+                        </div>
                     </div>
-                </div>
-                <div class="row text-white justify-content-center">
-                    <div class="col-md-10">
-                        <form>
-                            <div class="row mb-3">
-                                <div class="col">
-                                    <input
-                                        type="text"
-                                        class="form-control"
-                                        placeholder="Nombre"
-                                        aria-label="Nombre"
-                                    />
-                                </div>
-                                <div class="col">
-                                    <input
-                                        type="text"
-                                        class="form-control"
-                                        placeholder="Apellido"
-                                        aria-label="Apellido"
-                                    />
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <input
-                                    type="email"
-                                    class="form-control"
-                                    placeholder="Correo Electrónico"
-                                    aria-label="Correo Electrónico"
-                                />
-                            </div>
-                            <div class="mb-3">
-                                <textarea
-                                    class="form-control"
-                                    rows="3"
-                                    placeholder="Mensaje"></textarea>
-                            </div>
-                            <div class="mb-3">
-                                <p>¿Cómo le gustaría que lo contactemos?</p>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input"
-                                        type="radio"
-                                        name="contacto"
-                                        value="Email"
-                                        id="chkEmail"
-                                    />
-                                    <label
-                                        class="form-check-label"
-                                        for="chkEmail"
-                                    >
-                                        Email
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input"
-                                        type="radio"
-                                        name="contacto"
-                                        value="Teléfono"
-                                        id="chkTelefono"
-                                    />
-                                    <label
-                                        class="form-check-label"
-                                        for="chkTelefono"
-                                    >
-                                        Teléfono
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input"
-                                        type="radio"
-                                        name="contacto"
-                                        value="WhatsApp"
-                                        id="chkWhatsApp"
-                                    />
-                                    <label
-                                        class="form-check-label"
-                                        for="chkWhatsApp"
-                                    >
-                                        WhatsApp
-                                    </label>
-                                </div>
-                            </div>
+                    <div class="mb-3">
+                        <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Correo Electrónico"
+                            aria-label="Correo Electrónico"
+                        />
+                    </div>
+                    <div class="mb-3">
+                        <textarea
+                            class="form-control"
+                            rows="3"
+                            placeholder="Mensaje"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary send"
+                        ><i class="bi bi-send"></i> Enviar</button
+                    >
+                </form>
+            </div>
 
-                            <div class="mb-3">
-                                <p>¿En cuál horario prefiere ser atendido?</p>
-                                <select class="form-select">
-                                    <option selected>Seleccionar</option>
-                                    <option value="Mañana">Mañana</option>
-                                    <option value="Tarde">Tarde</option>
-                                    <option value="Noche">Noche</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <p>
-                                    ¿Le gustaría recibir novedades de la
-                                    Barbería Alura?
-                                </p>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input"
-                                        type="checkbox"
-                                        value=""
-                                        id="chkNovedades"
-                                    />
-                                    <label
-                                        class="form-check-label"
-                                        for="chkNovedades"
-                                    >
-                                        Sí, me gustaría recibir novedades.
-                                    </label>
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary send">
-                                <i class="bi bi-send"></i> Enviar</button
-                            >
-                        </form>
+            <div class="col-lg-6 mt-lg-0">
+                <div class="mt-3">
+                    <p>¿Cómo le gustaría que lo contactemos?</p>
+                    <div class="form-check">
+                        <input
+                            class="form-check-input"
+                            type="radio"
+                            name="contacto"
+                            value="Email"
+                            id="chkEmail"
+                        />
+                        <label class="form-check-label" for="chkEmail"
+                            >Email</label
+                        >
+                    </div>
+                    <div class="form-check">
+                        <input
+                            class="form-check-input"
+                            type="radio"
+                            name="contacto"
+                            value="Teléfono"
+                            id="chkTelefono"
+                        />
+                        <label class="form-check-label" for="chkTelefono"
+                            >Teléfono</label
+                        >
+                    </div>
+                    <div class="form-check">
+                        <input
+                            class="form-check-input"
+                            type="radio"
+                            name="contacto"
+                            value="WhatsApp"
+                            id="chkWhatsApp"
+                        />
+                        <label class="form-check-label" for="chkWhatsApp"
+                            >WhatsApp</label
+                        >
                     </div>
                 </div>
+
+                <div class="mb-3">
+                    <p>¿En cuál horario prefiere ser atendido?</p>
+                    <select class="form-select">
+                        <option selected>Seleccionar</option>
+                        <option value="Mañana">Mañana</option>
+                        <option value="Tarde">Tarde</option>
+                        <option value="Noche">Noche</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <p>¿Le gustaría recibir novedades de la Barbería Alura?</p>
+                    <div class="form-check">
+                        <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="chkNovedades"
+                        />
+                        <label class="form-check-label" for="chkNovedades"
+                            >Sí, me gustaría recibir novedades.</label
+                        >
+                    </div>
+                </div>
+
+                <!-- Modal Button -->
+                <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#horariosModal"
+                >
+                    <i class="bi bi-clock"></i> Ver Horarios
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="horariosModal" tabindex="-1" aria-labelledby="horariosModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="horariosModalLabel">Horarios de Atención - Barbería Alura</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            </div>
+            <div class="modal-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Día</th>
+                            <th>Horario de atención</th>
+                            <th>Servicios</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lunes</td>
+                            <td>9:00 AM - 6:00 PM</td>
+                            <td>
+                                <ul>
+                                    <li><i class="bi bi-scissors me-1"></i> Cortes de pelo</li>
+                                    <li><i class="bi bi-eyeglasses me-1"></i> Cortes de barba</li>
+                                    <li><i class="bi bi-award me-1"></i> Afeitado clásico</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Martes</td>
+                            <td>9:00 AM - 6:00 PM</td>
+                            <td>
+                                <ul>
+                                    <li><i class="bi bi-scissors me-1"></i> Cortes de pelo</li>
+                                    <li><i class="bi bi-eyeglasses me-1"></i> Cortes de barba</li>
+                                    <li><i class="bi bi-award me-1"></i> Afeitado clásico</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Miércoles</td>
+                            <td>9:00 AM - 6:00 PM</td>
+                            <td>
+                                <ul>
+                                    <li><i class="bi bi-scissors me-1"></i> Cortes de pelo</li>
+                                    <li><i class="bi bi-eyeglasses me-1"></i> Cortes de barba</li>
+                                    <li><i class="bi bi-award me-1"></i> Afeitado clásico</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jueves</td>
+                            <td>9:00 AM - 6:00 PM</td>
+                            <td>
+                                <ul>
+                                    <li><i class="bi bi-scissors me-1"></i> Cortes de pelo</li>
+                                    <li><i class="bi bi-eyeglasses me-1"></i> Cortes de barba</li>
+                                    <li><i class="bi bi-award me-1"></i> Afeitado clásico</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Viernes</td>
+                            <td>9:00 AM - 6:00 PM</td>
+                            <td>
+                                <ul>
+                                    <li><i class="bi bi-scissors me-1"></i> Cortes de pelo</li>
+                                    <li><i class="bi bi-eyeglasses me-1"></i> Cortes de barba</li>
+                                    <li><i class="bi bi-award me-1"></i> Afeitado clásico</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
@@ -139,6 +213,24 @@
 
 <style>
     @import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+
+    .modal-content{
+        background-color: var(--negro);
+    }
+
+    .table, thead, th, td{
+        background-color: var(--negro) !important;
+        color: var(--blanco);
+        border: none !important;
+    }
+
+    .modal-footer{
+        border-top: none;
+    }
+
+    .modal-header{
+        border-bottom: none;
+    }
 
     #contacto {
         min-height: 100vh;
@@ -178,6 +270,11 @@
         border: none;
     }
 
+    .form-check-label {
+        color: var(--blanco);
+        margin-bottom: 1rem;
+    }
+
     /* Estilo para los elementos option */
     .form-select option {
         background-color: rgba(
@@ -201,6 +298,13 @@
     }
 
     .form-control:focus {
+        border-color: rgb(255, 255, 255);
+        /* Cambia el color del contorno al hacer clic */
+        box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.466);
+        /* Cambia la sombra al hacer clic */
+    }
+
+    .form-check-input:focus {
         border-color: rgb(255, 255, 255);
         /* Cambia el color del contorno al hacer clic */
         box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.466);
