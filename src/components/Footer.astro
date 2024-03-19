@@ -4,25 +4,31 @@
             <div class="col-md-4 mb-3 mt-3">
                 <h5 class="mb-3">Información de contacto</h5>
                 <p>
-                    <i class="bi bi-geo-alt-fill"></i> Dirección: Calle de la Elegancia,
-                    123, Ciudad Elegante, Estado del Estilo
+                    <i class="bi icon-footer bi-geo-alt-fill"></i> Dirección: Calle
+                    de la Elegancia, 123, Ciudad Elegante, Estado del Estilo
                 </p>
                 <p>
-                    <i class="bi bi-phone-fill"></i> Teléfono: +1 (555) 123-4567
+                    <i class="bi icon-footer bi-phone-fill"></i> Teléfono: +1 (555)
+                    123-4567
                 </p>
                 <p>
-                    <i class="bi bi-envelope-fill"></i> Email: info@barberiaalura.com
+                    <i class="bi icon-footer bi-envelope-fill"></i> Email: info@barberiaalura.com
                 </p>
             </div>
 
             <div class="col-md-4 mb-3 mt-3">
                 <h5 class="mb-3">Enlaces rápidos</h5>
-                <ul>
-                    <li class="mb-3"><a href="/">Inicio</a></li>
-                    <li class="mb-3"><a href="/productos">Servicios</a></li>
-                    <li class="mb-3"><a href="/contacto">Contacto</a></li>
+                <ul class="list-enlaces">
+                    <li class="enlace mb-3"><a href="/">Inicio</a></li>
+                    <li class="enlace mb-3">
+                        <a href="/productos">Servicios</a>
+                    </li>
+                    <li class="enlace mb-3">
+                        <a href="/contacto">Contacto</a>
+                    </li>
                 </ul>
             </div>
+
             <div class="col-md-4 mb-3 mt-3">
                 <h5 class="mb-3">Síguenos en redes sociales</h5>
                 <ul class="list-inline">
@@ -65,6 +71,7 @@
     * {
         color: var(--blanco);
     }
+
     #footer {
         min-height: 80vh;
         background-image: url(/public/imgs/fondos/3.png);
@@ -97,5 +104,22 @@
     a:hover .bi {
         color: var(--amarillo);
         transform: scale(1.1) !important;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    /* Estilo para el punto de la lista */
+    .list-enlaces .enlace::before {
+        content: "\2022"; /* Utiliza el carácter de punto redondo */
+        color: var(--amarillo); /* Color amarillo para el punto */
+        display: inline-block;
+        width: 1em; /* Ancho del punto */
+        margin-right: 0.5em; /* Espacio entre el punto y el texto */
+    }
+
+    .icon-footer {
+        color: var(--amarillo);
     }
 </style>
