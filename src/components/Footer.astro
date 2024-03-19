@@ -1,22 +1,24 @@
 <footer class="container-fluid pt-4 pb-4" id="footer">
     <div class="container">
         <div class="row text-white">
-            <div class="col-md-4 mb-3 mt-3">
+            <div class="col-md-3 mb-3 mt-3">
                 <h5 class="mb-3">Información de contacto</h5>
                 <p>
-                    <i class="bi icon-footer bi-geo-alt-fill"></i> Dirección: Calle
-                    de la Elegancia, 123, Ciudad Elegante, Estado del Estilo
+                    <i class="bi icon-footer bi-geo-alt-fill"></i>Dirección:
+                    Calle de la Elegancia, 123, Ciudad Elegante, Estado del
+                    Estilo
                 </p>
                 <p>
-                    <i class="bi icon-footer bi-phone-fill"></i> Teléfono: +1 (555)
-                    123-4567
+                    <i class="bi icon-footer bi-phone-fill"></i>Teléfono: +1
+                    (555) 123-4567
                 </p>
                 <p>
-                    <i class="bi icon-footer bi-envelope-fill"></i> Email: info@barberiaalura.com
+                    <i class="bi icon-footer bi-envelope-fill"></i>Email:
+                    info@barberiaalura.com
                 </p>
             </div>
 
-            <div class="col-md-4 mb-3 mt-3">
+            <div class="col-md-3 mb-3 mt-3">
                 <h5 class="mb-3">Enlaces rápidos</h5>
                 <ul class="list-enlaces">
                     <li class="enlace mb-3"><a href="/">Inicio</a></li>
@@ -29,31 +31,56 @@
                 </ul>
             </div>
 
-            <div class="col-md-4 mb-3 mt-3">
+            <div class="col-md-3 mb-3 mt-3">
                 <h5 class="mb-3">Síguenos en redes sociales</h5>
-                <ul class="list-inline">
-                    <li class="list-inline-item m-3">
+                <div class="d-flex justify-content-start">
+                    <div class="mr-3">
                         <a
                             target="_blank"
                             href="https://www.facebook.com/aluracursoslatam/?locale=es_LA"
-                            ><i class="bi bi-facebook display-5"></i></a
                         >
-                    </li>
-                    <li class="list-inline-item m-3">
+                            <i class="bi bix bi-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="mr-3">
                         <a
                             target="_blank"
                             href="https://www.instagram.com/aluralatam/?hl=es"
-                            ><i class="bi bi-instagram display-5"></i></a
                         >
-                    </li>
-                    <li class="list-inline-item m-3">
+                            <i class="bi bix bi-instagram"></i>
+                        </a>
+                    </div>
+                    <div>
                         <a
                             target="_blank"
                             href="https://www.linkedin.com/company/alura-latam/?originalSubdomain=mx"
-                            ><i class="bi bi-linkedin display-5"></i></a
                         >
-                    </li>
-                </ul>
+                            <i class="bi bix bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-3 mt-3">
+                <h5 class="mb-3">Únete a nuestro Newsletter</h5>
+                <form>
+                    <div class="mb-3">
+                        <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Correo electrónico"
+                            aria-label="Correo electrónico"
+                            aria-describedby="button-addon2"
+                        />
+                    </div>
+                    <div>
+                        <button
+                            class="btn btn-primary btn-block"
+                            type="button"
+                            id="button-addon2">Suscribirse</button
+                        >
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -121,5 +148,76 @@
 
     .icon-footer {
         color: var(--amarillo);
+    }
+
+    .bix {
+        font-size: 2rem;
+        margin-right: 1rem;
+    }
+
+    input,
+    textarea,
+    select,
+    option {
+        background-color: #ffffff00 !important;
+        backdrop-filter: blur(10px) !important;
+        border: 1px solid #ffffff38 !important;
+        color: var(--blanco) !important;
+        border-radius: 20px !important;
+    }
+
+    .form-select {
+        background-color: rgba(
+            255,
+            255,
+            255,
+            0.5
+        ); /* Color de fondo transparente */
+        border: none;
+    }
+
+    .form-check-label {
+        color: var(--blanco);
+        margin-bottom: 1rem;
+    }
+
+    /* Estilo para los elementos option */
+    .form-select option {
+        background-color: rgba(
+            255,
+            255,
+            255,
+            0.5
+        ); /* Color de fondo transparente */
+    }
+
+    input::placeholder {
+        color: var(--blanco);
+    }
+
+    input:focus {
+        background-color: #ffffff00;
+    }
+
+    textarea:focus {
+        background-color: #ffffff00;
+    }
+
+    .form-control:focus {
+        border-color: rgb(255, 255, 255);
+        /* Cambia el color del contorno al hacer clic */
+        box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.466);
+        /* Cambia la sombra al hacer clic */
+    }
+
+    .form-check-input:focus {
+        border-color: rgb(255, 255, 255);
+        /* Cambia el color del contorno al hacer clic */
+        box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.466);
+        /* Cambia la sombra al hacer clic */
+    }
+
+    textarea::placeholder {
+        color: var(--blanco);
     }
 </style>
