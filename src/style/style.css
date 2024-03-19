@@ -68,3 +68,7 @@ body {
 .text-white {
   color: var(--blanco);
 }
+
+.bi {
+  margin-right: 10px;
+}
