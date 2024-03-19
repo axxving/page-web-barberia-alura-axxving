@@ -68,7 +68,8 @@
   <div class="container">
     <div class="row text-white">
       <div class="col-md-6">
-        <h2 class="">Ubicación</h2>
+        <h2 class="with-dash">Ubicación</h2>
+
         <p class="">
           Nuestro establecimiento está ubicado en el corazón de la ciudad.
         </p>
@@ -79,7 +80,7 @@
           <li>Restaurantes y cafeterías locales</li>
           <li>Tiendas de moda</li>
         </ul>
-        <h2 class="">Diferenciales</h2>
+        <h2 class="with-dash">Diferenciales</h2>
         <ul class="">
           <li>Atención personalizada a los clientes.</li>
           <li>Espacio diferenciado.</li>
@@ -185,5 +186,41 @@
 
   #footfooter {
     background-color: var(--negro);
+  }
+
+  .with-dash {
+    position: relative; /* Establece la posición relativa */
+    padding-left: 20px; /* Añade espacio a la izquierda para el guion */
+  }
+
+  .with-dash::before {
+    content: ""; /* Contenido vacío */
+    position: absolute; /* Establece la posición absoluta */
+    left: 0; /* Coloca el guion a la izquierda del contenido */
+    top: 50%; /* Alinea verticalmente al centro */
+    transform: translateY(-50%); /* Corrige la alineación vertical */
+    width: 15px; /* Ancho del guion */
+    height: 4px; /* Altura del guion */
+    background-color: var(--amarillo); /* Color del guion */
+  }
+
+  /* Estilo para la lista ul */
+  ul {
+    list-style-type: none; /* Quita los puntos predeterminados de la lista */
+    padding: 0; /* Elimina el relleno predeterminado */
+  }
+
+  /* Estilo para los elementos li */
+  li {
+    position: relative; /* Establece la posición relativa */
+    padding-left: 20px; /* Añade espacio a la izquierda para el punto */
+  }
+
+  /* Estilo para el punto de la lista */
+  li::before {
+    content: "\2022"; /* Utiliza el carácter de punto redondo */
+    position: absolute; /* Establece la posición absoluta */
+    left: 0; /* Coloca el punto a la izquierda del contenido */
+    color: var(--amarillo); /* Color amarillo para el punto */
   }
 </style>
