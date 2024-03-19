@@ -9,7 +9,7 @@
     .btn-up {
         background-color: var(--amarillo);
         backdrop-filter: blur(10px);
-        border-radius: 5px;
+        border-radius: 50%;
         padding: 10px 15px;
         position: fixed;
         bottom: -100px;
@@ -17,11 +17,21 @@
         z-index: 1000;
         margin: 20px;
         cursor: pointer;
+        
         transition: bottom 0.3s ease;
+        transition: all ease-in-out 200ms;
 
         .bi-arrow-up {
             margin-right: 0px;
             color: var(--blanco);
+        }
+
+        &:hover {
+            background-color: var(--blanco);
+            color: var(--negro);
+            .bi-arrow-up {
+                color: var(--negro);
+            }
         }
     }
 </style>
