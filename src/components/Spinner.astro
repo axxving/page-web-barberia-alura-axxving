@@ -1,80 +1,96 @@
 <!-- Spinner-->
 <div class="loader-wrapper">
-    <div class="loader"></div>
+    <div class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 </div>
 
 <script>
-    // Agrega la clase "loaded" al body cuando la página haya cargado completamente
-    window.addEventListener("load", function () {
-        document.body.classList.add("loaded");
-    });
+  // Agrega la clase "loaded" al body cuando la página haya cargado completamente
+  window.addEventListener("load", function () {
+    document.body.classList.add("loaded");
+  });
 </script>
 
 <style>
-    /*TODO Spinner*/
-    /* Estilos para la pantalla de carga */
-    .loader-wrapper {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        background: var(--negro);
-        /* Fondo semi-transparente rojo */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 1000000000000000 !important;
-        /* Capa superior para que esté por encima de otros elementos */
-        transition: opacity 0.5s;
-        /* Transición suave de la opacidad */
-        opacity: 1;
-        /* Opacidad inicial */
-    }
+  /*TODO Spinner*/
+  /* Estilos para la pantalla de carga */
+  .loader-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: var(--negro);
+    /* Fondo semi-transparente rojo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000000000000000 !important;
+    /* Capa superior para que esté por encima de otros elementos */
+    transition: opacity 0.5s;
+    /* Transición suave de la opacidad */
+    opacity: 1;
+    /* Opacidad inicial */
+  }
 
-    /* Estilos para el spinner de carga */
-    .loader {
-        border: 8px solid #f3f3f3;
-        /* Círculo exterior gris claro */
-        border-top: 8px solid var(--amarillo);
-        /* Círculo superior azul */
-        border-radius: 50%;
-        /* Borde redondeado para crear un círculo */
-        width: 50px;
-        height: 50px;
-        animation: spin 1s linear infinite;
-        /* Animación de rotación */
-    }
+  /* Ocultar la pantalla de carga después de que la página haya cargado */
+  body:not(.loaded) .loader-wrapper {
+    opacity: 1;
+  }
 
-    @keyframes spin {
-        0% {
-            transform: rotate(0deg);
-            /* Rotación inicial */
-        }
+  /* Mostrar el contenido de la página después de cargar completamente */
+  body.loaded .loader-wrapper {
+    opacity: 0;
+    pointer-events: none;
+    /* Permitir interacción con elementos debajo de la pantalla de carga */
+  }
 
-        100% {
-            transform: rotate(360deg);
-            /* Rotación completa */
-        }
-    }
+  /* Contenido de la página */
+  #content {
+    display: none;
+    /* Inicialmente oculto */
+  }
 
-    /* Ocultar la pantalla de carga después de que la página haya cargado */
-    body:not(.loaded) .loader-wrapper {
-        opacity: 1;
-    }
+  body.loaded #content {
+    display: block;
+  }
 
-    /* Mostrar el contenido de la página después de cargar completamente */
-    body.loaded .loader-wrapper {
-        opacity: 0;
-        pointer-events: none;
-        /* Permitir interacción con elementos debajo de la pantalla de carga */
+  .loader {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .loader div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: #fff;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  .loader div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+  }
+  .loader div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+  }
+  .loader div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+  }
+  @keyframes lds-facebook {
+    0% {
+      top: 8px;
+      height: 64px;
     }
-
-    /* Contenido de la página */
-    #content {
-        display: none;
-        /* Inicialmente oculto */
+    50%,
+    100% {
+      top: 24px;
+      height: 32px;
     }
-
-    body.loaded #content {
-        display: block;
-    }
+  }
 </style>

@@ -63,6 +63,7 @@ body {
 
 .btn {
   border-radius: 30px !important;
+  border: none !important;
 }
 
 .text-white {
