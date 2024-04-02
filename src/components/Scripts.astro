@@ -1,94 +1,20 @@
 <script>
-    import "bootstrap/dist/css/bootstrap.min.css";
-    import "bootstrap/dist/js/bootstrap.bundle.min.js";
+  import "bootstrap/dist/css/bootstrap.min.css";
+  import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
-    // Importando scroll reveal
-    import ScrollReveal from "scrollreveal";
+  // Importando scroll reveal
+  import ScrollReveal from "scrollreveal";
 
-    // Inicializar ScrollReveal
-    const sr = ScrollReveal({
-        origin: "bottom", // Desde la parte inferior
-        distance: "20px", // Distancia de revelación
-        duration: 1000, // Duración de la animación reducida a la mitad
-        delay: 500, // Retraso antes de la animación reducido a la mitad
-        easing: "cubic-bezier(0.5, 0, 0, 1)", // Función de aceleración para una apariencia más fluida
-    });
+  // Inicializar ScrollReveal
+  const sr = ScrollReveal({
+    origin: "bottom", // Desde la parte inferior
+    distance: "30px", // Distancia de revelación
+    duration: 800, // Duración de la animación ajustada para una sensación más suave
+    delay: 300, // Retraso antes de la animación reducido para que los elementos aparezcan más rápido
+    easing: "ease-in-out", // Función de aceleración para una apariencia más suave y natural
+  });
 
-    // Revelar elementos de la sección "Hero"
-    sr.reveal("#hero .titulo-hero", {
-        origin: "left", // Desde la izquierda
-    });
-    sr.reveal("#hero p", {
-        origin: "bottom", // Desde la parte inferior
-    });
-    sr.reveal("#hero .btn", {
-        origin: "right", // Desde la derecha
-    });
-
-    // Revelar elementos de la sección "Sobre"
-    sr.reveal("#sobre img", {
-        origin: "left", // Desde la izquierda
-    });
-    sr.reveal("#sobre .titulo", {
-        origin: "right", // Desde la derecha
-    });
-    sr.reveal("#sobre .parrafo", {
-        origin: "bottom", // Desde la parte inferior
-    });
-    sr.reveal("#sobre .btn", {
-        origin: "left", // Desde la izquierda
-    });
-
-    // Revelar elementos de la sección "Ubicacion"
-    sr.reveal("#ubicacion h2", {
-        origin: "left", // Desde la izquierda
-    });
-    sr.reveal("#ubicacion p", {
-        origin: "right", // Desde la derecha
-    });
-    sr.reveal("#ubicacion ul", {
-        origin: "bottom", // Desde la parte inferior
-    });
-
-    // Revelar elementos de la sección "Footer"
-    sr.reveal("#footer h5", {
-        origin: "left", // Desde la izquierda
-    });
-    sr.reveal("#footer p", {
-        origin: "right", // Desde la derecha
-    });
-    sr.reveal("#footer ul", {
-        origin: "bottom", // Desde abajo
-    });
-    sr.reveal("#footer .list-inline-item", {
-        origin: "bottom", // Desde abajo
-    });
-
-    // Revelar elementos de la sección "Footfooter"
-    sr.reveal("#footfooter p", {
-        origin: "bottom", // Desde abajo
-    });
-
-    // Revelar elementos de la sección "Cards"
-    sr.reveal("#cards .card", {
-        origin: "bottom", // Desde la parte inferior
-        distance: "20px", // Distancia de revelación
-        interval: 200, // Intervalo entre la animación de cada tarjeta
-    });
-
-    // Revelar elementos de la sección "Contacto"
-    sr.reveal("#contacto .col-md-12", {
-        origin: "bottom", // Desde la parte inferior
-        distance: "20px", // Distancia de revelación
-    });
-
-    sr.reveal("#contacto form", {
-        origin: "bottom", // Desde la parte inferior
-        distance: "20px", // Distancia de revelación
-    });
-
-    sr.reveal("#contacto col-md-6", {
-        origin: "left", // Desde la parte inferior
-        distance: "20px", // Distancia de revelación
-    });
+  sr.reveal(".container, p, li, a, i, .bi, h2, .card, select, input, option, .btn", {
+    distance: "30px", // Distancia de revelación
+  });
 </script>
